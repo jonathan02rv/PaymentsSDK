@@ -1,4 +1,5 @@
 import Foundation
+import PaymentsCore
 
 public struct PaymentsConfiguration: Sendable {
   public enum Environment: Sendable {
@@ -29,8 +30,3 @@ public struct PaymentsConfiguration: Sendable {
     self.logLevel = logLevel
   }
 }
-
-public enum PaymentsLogLevel: Int, Sendable {
-  case none = 0, error, info, debug
-}
-
